@@ -1,0 +1,10 @@
+{
+  "name": "electron-chat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Manuelly Suzik & Bruna Freitas",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^15.2.0"
+  }
+}
