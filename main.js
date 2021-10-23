@@ -1,17 +1,20 @@
 
 const { app, BrowserWindow } = require('electron')
 
-function createWindow() {
-  const win = new BrowserWindow({
-    width: 800,
-    height: 300
+
+app.on('ready', () => {
+  function createWindow() {
+    const window = new BrowserWindow({
+      width: 800,
+      height: 600
+    })
+
+    window.loadURL('https://www.google.com')
+  }
+
+  app.whenReady().then(() => {
+    createWindow()
   })
-
-  win.loadFile('src/html/index.html')
-}
-
-app.whenReady().then(() => {
-  createWindow()
 })
 
 app.on('window-all-closed', function () {
