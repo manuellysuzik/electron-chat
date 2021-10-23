@@ -1,7 +1,7 @@
 {
   "name": "electron-chat",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "main": "main.js",
   "author": "Manuelly Suzik & Bruna Freitas",
   "license": "MIT",
   "scripts": {
